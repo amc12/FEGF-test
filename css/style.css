@@ -1,0 +1,252 @@
+/*  Base Element Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+body:before {
+  content: '';
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(247, 147, 116, 0.98),
+      rgba(35, 32, 21, 0.98)
+    ),
+    url('../img/blurred_image_bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /*filter: blur(5px);*/
+  z-index: -1;
+}
+
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+}
+a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: small;
+}
+p {
+  margin: 0.5rem 0;
+}
+img {
+  width: 100%;
+}
+
+/* Base Layout Styles */
+
+/* Progress bar*/
+/*
+.wrapper {
+  display: flex;
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.progressbar {
+  counter-reset: step;
+}
+.progressbar li {
+  list-style: none;
+  display: inline-block;
+  width: 30.33%;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.progressbar li:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  background-color: rgba(0, 0, 0, 0);
+}
+.progressbar li:after {
+  content: '';
+  position: absolute;
+  width: 58px;
+  height: 1px;
+  background-color: #ddd;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  color: grey;
+}
+.progressbar li.active:before {
+  border-color: grey;
+}
+.progressbar li.active + li:after {
+  background-color: grey;
+}
+*/
+
+/* Finished progress bar */
+nav.header {
+  display: none;
+  background-color: #f96332;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  /*box-shadow: 0px 0px 3px 0.3px rgba(41, 41, 41, 0.2);*/
+}
+ul.nav-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1.5rem;
+  color: #ddd;
+}
+.menu-item i {
+  cursor: pointer;
+}
+.logo-item p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transform: translate(0, -15%);
+}
+.hide-nav-item i {
+  cursor: pointer;
+}
+.container {
+  max-width: 90%;
+  height: 97vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.title h1 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+/* Form styling */
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1.2rem 0;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgba(171, 120, 104, 0.5);
+}
+button.btn {
+  margin-top: 2rem;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1.2rem 0;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgba(128, 128, 128, 0);
+  cursor: pointer;
+}
+::placeholder {
+  color: #ddd;
+  opacity: 1;
+}
+.form-group input[type='text'],
+input[type='password'],
+input[type='email'] {
+  color: #fff;
+  padding-left: 3.8rem;
+}
+input.invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+input:focus:invalid {
+  box-shadow: none;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: auto;
+}
+
+.form-group i {
+  font-size: x-large;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(80%, 70%);
+  color: #aaa;
+}
+.bottom-text a {
+  font-size: small;
+}
+
+/* Media queries */
+
+@media (min-width: 1000px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+  .title h1 {
+    font-size: 2.7rem;
+    margin-bottom: 8rem;
+  }
+  .form-container {
+    width: 21rem;
+  }
+  nav.header {
+    display: block;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+  nav.header {
+    display: block;
+  }
+  .title h1 {
+    font-size: 2.7rem;
+    margin-bottom: 8rem;
+  }
+  .form-container {
+    width: 23rem;
+  }
+}

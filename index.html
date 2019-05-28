@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Create account</title>
+  </head>
+  <body>
+    <nav class="header">
+      <ul class="nav-items">
+        <li class="menu-item">
+            <i class="fas fa-bars header__menu"></i>
+        </li>
+        <li class="logo-item">
+          <p>N</p>
+        </li>
+        <li class="hide-nav-item">
+            <i class="fas fa-times"></i>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <!--<header class="progress-bar">
+          <div class="wrapper">
+              <ul class="progressbar">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+
+      </header>-->
+      <section class="title">
+          <h1>Create Account</h1>
+
+      </section>
+      <section class="form-container">
+          <form  action="dashboard.html">
+            <div class="form-group">
+              <input type="text"  type="text" placeholder="Name" required name="UserName" id="user-name" />
+              <i class="far fa-user-circle fa-2x"></i>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" required name="email" id="email" />
+              <i class="far fa-envelope fa-2x"></i>
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" required name="password" id="password" minlength="6" maxlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" />
+              <!--the required password should contain at least 1 uppercase character, 1 lowercase character, and 1 number and have 6 to 8 chars-->
+              <i class="fas fa-lock fa-2x"></i>
+            </div>
+
+            <button type="submit" class="btn">
+              Continue
+            </button>
+          </form>
+
+        <footer>
+            <p class="bottom-text"></p><a href="#">Terms & Conditions</a></p>
+        </footer>
+
+      <section>
+    </div>
+    <script src="js/scripts.js" >
+    </script>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="css/dashboard-styles.css" />
+    <title>Grid-dashboard</title>
+  </head>
+  <body>
+    <div class="grid-container">
+        <nav class="header">
+            <ul class="nav-items">
+              <li class="left-items-container">
+                <ul class="left-items">
+                  <li class="menu item">
+                    <i class="fas fa-bars header__menu"></i>
+                  </li>
+                  <li class="widgets item">
+                    <p>Widgets</p>
+                  </li>
+                </ul>
+              </li>
+              <li class="logo-item">
+                <p>N</p>
+              </li>
+              <li class="right-items-container">
+                <ul class="right-items">
+                  <li class="plus item">
+                      <i class="fas fa-plus"></i>
+                  </li>
+                  <li class="search show item">
+                      <i class="fas fa-search"></i>
+                  </li>
+                  <li class="avatar show item">
+                      <i class="fas fa-user-ninja"></i>
+                  </li>
+                  <li class="bookmark show item">
+                      <i class="far fa-bookmark"></i>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+        <div class="top">
+            <div class="top-news">
+                <h1>Astronauts could land
+                    <br>
+                    on Red Planet by 2039
+                </h1>
+                <p>News</p>
+              <!--<h1>Astronauts could land<br>
+                 on Red Planet by 2039
+              </h1>
+              <ul class="news-bottom">
+                <li class="tab1">
+                  <i class="fas fa-bars header__menu"></i>
+                  <p>Space.com</p>
+                </li>
+                <li class="tab2">
+                    <i class="fas fa-bars header__menu"></i>
+                    <p>20m ago</p>
+                </li>
+                <li class="tab3">
+                    <p>Science</p>
+                </li>
+              </ul>-->
+            </div>
+            <div class="top-weather">
+                <p class="weather">Weather</p>
+                <p>Mostly cloudy</p>
+                <!--<div class="weather-container">
+
+
+                  <div class="weather-location">
+                      <i class="fas fa-bars header__menu"></i>
+                      <p>Mostly Cloudy</p>
+                      <p>New York</p>
+                  </div>
+                  <div class="weather-prognosis">
+                        <ul class="weather-days">
+                          <li>Today</li>
+                          <li>Tomorrow</li>
+                          <li>Week</li>
+                        </ul>
+                        <p>76 deg&deg;rees</p>
+                  </div>
+                  <ul class="weather-hourly">
+                    <li class="hour"><p class="deg">65&deg;</p><p>6 AM</p></li>
+                    <li class="hour"><p class="deg">86&deg;</p><p>9 AM</p></li>
+                    <li class="hour"><p class="deg">88&deg;</p><p>12 PM</p></li>
+                    <li class="hour"><p class="deg">79&deg;</p><p>3 PM</p></li>
+                    <li class="hour"><p class="deg">62&deg;</p><p>6 PM</p></li>
+                    <li class="hour"><p class="deg">59&deg;</p><p>9 PM</p></li>
+                    <li class="hour7"><p class="deg">52&deg;</p><p>12 AM</p></li>
+                    <li class="hour8"><p class="deg">49&deg;</p><p>3 AM</p></li>
+                  </ul>
+                </div> -->
+            </div>
+
+          </div>
+        <div class="stockcards-charts-container">
+              <section class="features-stockcards">
+                <div class="feature">
+                        <a href="#nasdaq" class="toggle"> <p class="nasdaq1">Nasdaq</p></a>
+                        <h3>+0.51%</h3>
+                        <p>
+                          5,055.55
+                        </p>
+                      </div>
+                      <button>Details</button>
+
+                </div>
+                <div class="feature">
+                    <a href="#dowjones" class="toggle"> <p class="dowjones1">Dow Jones</p></a>
+                    <h3>-0.31%</h3>
+                    <p>
+                      4,567.00
+                    </p>
+                    <button>Details</button>
+
+                  </div>
+                </div>
+                <div class="feature">
+                    <a href="#appl" class="toggle"> <p class="appl1">APPL</p></a>
+                    <h3>+0.51%</h3>
+                    <p>
+                      126.55
+                    </p>
+                    <button>Details</button>
+
+                  </div>
+                </div>
+                <div class="feature">
+                    <a href="#goog" class="toggle"> <p class="goog1">Goog</p></a>
+                    <h3>+0.70%</h3>
+                    <p>
+                      534.53
+                    </p>
+                    <button>Details</button>
+
+                  </div>
+                </div>
+              </section>
+
+              <section class="chart-details">
+                    <div id="nasdaq" class="tab-feature is-visible">
+
+                      <div class="chart-details">
+                        <h2>Nasdaq Chart</h2>
+                       <p>Addolore dignissimos asperiores dicta facere optio quod commodi nam tempore recusandae.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                      </div>
+                    </div>
+
+                    <div id="dowjones" class="tab-feature">
+                      <div class="chart-details">
+                            <h2>Dow Jones Chart</h2>
+                            <p>Addolore dignissimos asperiores dicta facere optio quod commodi nam tempore recusandae.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                      </div>
+                    </div>
+                    <div id="appl" class="tab-feature">
+                        <div class="chart-details">
+                            <h2>Appl Chart</h2>
+                            <p>Addolore dignissimos asperiores dicta facere optio quod commodi nam tempore recusandae.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                          </div>
+                    </div>
+                    <div id="goog" class="tab-feature">
+                        <div class="chart-details">
+                            <h2>Goog Chart</h2>
+                            <p>Addolore dignissimos asperiores dicta facere optio quod commodi nam tempore recusandae.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                          </div>
+                    </div>
+              </section>
+        </div>
+        <script>
+
+
+          //show element
+          var show = function(elem) {
+            elem.classList.add("is-visible");
+          };
+
+          // Hide element
+          var hide = function(elem) {
+            elem.classList.remove("is-visible");
+          };
+
+          var toggle = function(elem) {
+            elem.classList.toggle("is-visible");
+          };
+
+          // Listen for click events
+          document.addEventListener(
+            "click",
+            function(event) {
+              // Make sure clicked element is our toggle
+              if (!event.target.classList.contains("toggle")) return;
+
+              // Prevent default link behavior
+              event.preventDefault();
+
+              // Get the content
+              var content = document.querySelector(event.target.hash);
+              if (!content) return;
+              let tabCharts = document.querySelectorAll(".tab-feature");
+              console.log(tabCharts);
+              for (let i = 0; i < tabCharts.length; i++) {
+                if (tabCharts[i].classList.contains("is-visible"))
+                hide(tabCharts[i]);
+              }
+              // Toggle the content
+              toggle(content);
+            },
+            false
+          );
+        </script>
+  </body>
+</html>
