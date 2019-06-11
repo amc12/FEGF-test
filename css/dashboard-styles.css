@@ -46,6 +46,7 @@ nav.header {
   /*box-shadow: 0px 0px 3px 0.3px rgba(41, 41, 41, 0.2);*/
 }
 ul.nav-items {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin: 0 1.5rem;
@@ -53,6 +54,10 @@ ul.nav-items {
 }
 .menu-item i {
   cursor: pointer;
+}
+.logo-item {
+  left: calc(50% - 0.5rem);
+  position: fixed;
 }
 .logo-item p {
   color: #fff;
